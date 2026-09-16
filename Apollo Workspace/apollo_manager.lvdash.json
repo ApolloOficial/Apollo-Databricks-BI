@@ -1,0 +1,253 @@
+{
+  "datasets": [
+    {
+      "name": "7a93aad0",
+      "displayName": "Apollo Business Insights Unit Data",
+      "queryLines": [
+        "SELECT * FROM apollo_bi.fact_company_unit_is"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "e3cfdf90",
+      "displayName": "IS",
+      "layout": [
+        {
+          "widget": {
+            "name": "is-financeiro",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "7a93aad0",
+                  "fields": [
+                    {
+                      "name": "avg(is_financeiro)",
+                      "expression": "AVG(`is_financeiro`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`filial_nome` IN ('Unidade Solar 01')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "<span style=\"font-family: Inter;color: #FFAB00;\">IS FINANCEIRO</span>",
+                  "fields": []
+                }
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(is_financeiro)",
+                  "formatTemplate": "{{ @formatted }}%"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "bc890b1a",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## <span style=\"text-align:center;display:block\"><span style=\"font-family:Inter\">ÍNDICES DE SUSTENTABILIDADE</span></span>"
+              ],
+              "verticalAlign": "VERTICAL_ALIGN_CENTER"
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#000000"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "is-ambiental",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "7a93aad0",
+                  "fields": [
+                    {
+                      "name": "avg(is_ambiental)",
+                      "expression": "AVG(`is_ambiental`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`filial_nome` IN ('Unidade Solar 01')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "<span style=\"font-family: Inter;color: #00A972;\">IS AMBIENTAL</span>",
+                  "fields": []
+                }
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(is_ambiental)",
+                  "formatTemplate": "{{ @formatted }}%"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "is-energetico",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "7a93aad0",
+                  "fields": [
+                    {
+                      "name": "avg(is_energetico)",
+                      "expression": "AVG(`is_energetico`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`filial_nome` IN ('Unidade Solar 01')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "#### <span style=\"font-family: Inter;color: #077A9D;\">IS ENERGÉTICO</span>",
+                  "fields": []
+                }
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(is_energetico)",
+                  "formatTemplate": "{{ @formatted }}%"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "ab1780eb",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "7a93aad0",
+                  "fields": [
+                    {
+                      "name": "avg(is_geral)",
+                      "expression": "AVG(`is_geral`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`filial_nome` IN ('Unidade Solar 01')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "title": {
+                  "value": "#### <span style=\"font-family: Inter;color: #FF3621;\">IS GERAL</span>",
+                  "fields": []
+                }
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(is_geral)",
+                  "formatTemplate": "{{ @formatted }}%"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
