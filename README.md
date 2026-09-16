@@ -1,4 +1,4 @@
-# Apollo BI — Databricks
+# Apollo BI - Databricks
 
 Pipeline de BI do projeto Apollo (2º ano), rodando no Databricks, responsável
 por calcular as métricas do sistema a partir dos dados operacionais do Neon
